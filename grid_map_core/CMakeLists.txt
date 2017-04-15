@@ -19,11 +19,6 @@ if(NOT EIGEN3_FOUND)
   set(EIGEN3_INCLUDE_DIR ${EIGEN3_INCLUDE_DIRS})
 endif()
 
-if(NOT ${EIGEN3_INCLUDE_DIR})
-  find_package(Eigen REQUIRED)
-  set(EIGEN3_INCLUDE_DIR ${EIGEN_INCLUDE_DIRS})
-endif()
-
 ###################################
 ## catkin specific configuration ##
 ###################################
